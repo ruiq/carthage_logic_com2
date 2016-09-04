@@ -10,7 +10,25 @@
 		E08711281D7C59E700CC8F52 /* carthage_order_com.h in Headers */ = {isa = PBXBuildFile; fileRef = E08711271D7C59E700CC8F52 /* carthage_order_com.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E08711311D7C59F300CC8F52 /* OrderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E087112F1D7C59F300CC8F52 /* OrderManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E08711321D7C59F300CC8F52 /* OrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E08711301D7C59F300CC8F52 /* OrderManager.m */; };
+		E087113C1D7C5DA000CC8F52 /* TestBaseCOM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08711381D7C5D8900CC8F52 /* TestBaseCOM.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E08711371D7C5D8900CC8F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E08711331D7C5D8900CC8F52 /* TestBaseCOM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E03CE15B1D7B1D0000C62EEF;
+			remoteInfo = TestBaseCOM;
+		};
+		E087113A1D7C5D9C00CC8F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E08711331D7C5D8900CC8F52 /* TestBaseCOM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E03CE15A1D7B1D0000C62EEF;
+			remoteInfo = TestBaseCOM;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E08711241D7C59E700CC8F52 /* carthage_order_com.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = carthage_order_com.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +36,7 @@
 		E08711291D7C59E700CC8F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E087112F1D7C59F300CC8F52 /* OrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderManager.h; sourceTree = "<group>"; };
 		E08711301D7C59F300CC8F52 /* OrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderManager.m; sourceTree = "<group>"; };
+		E08711331D7C5D8900CC8F52 /* TestBaseCOM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestBaseCOM.xcodeproj; path = Carthage/Checkouts/carthage_base_com/TestBaseCOM.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E087113C1D7C5DA000CC8F52 /* TestBaseCOM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +54,7 @@
 		E087111A1D7C59E700CC8F52 = {
 			isa = PBXGroup;
 			children = (
+				E08711391D7C5D8D00CC8F52 /* COMs */,
 				E08711261D7C59E700CC8F52 /* carthage_order_com */,
 				E08711251D7C59E700CC8F52 /* Products */,
 			);
@@ -56,6 +77,22 @@
 				E08711301D7C59F300CC8F52 /* OrderManager.m */,
 			);
 			path = carthage_order_com;
+			sourceTree = "<group>";
+		};
+		E08711341D7C5D8900CC8F52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E08711381D7C5D8900CC8F52 /* TestBaseCOM.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E08711391D7C5D8D00CC8F52 /* COMs */ = {
+			isa = PBXGroup;
+			children = (
+				E08711331D7C5D8900CC8F52 /* TestBaseCOM.xcodeproj */,
+			);
+			name = COMs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +122,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E087113B1D7C5D9C00CC8F52 /* PBXTargetDependency */,
 			);
 			name = carthage_order_com;
 			productName = carthage_order_com;
@@ -115,12 +153,28 @@
 			mainGroup = E087111A1D7C59E700CC8F52;
 			productRefGroup = E08711251D7C59E700CC8F52 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E08711341D7C5D8900CC8F52 /* Products */;
+					ProjectRef = E08711331D7C5D8900CC8F52 /* TestBaseCOM.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E08711231D7C59E700CC8F52 /* carthage_order_com */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E08711381D7C5D8900CC8F52 /* TestBaseCOM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TestBaseCOM.framework;
+			remoteRef = E08711371D7C5D8900CC8F52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E08711221D7C59E700CC8F52 /* Resources */ = {
@@ -142,6 +196,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E087113B1D7C5D9C00CC8F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TestBaseCOM;
+			targetProxy = E087113A1D7C5D9C00CC8F52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E087112A1D7C59E700CC8F52 /* Debug */ = {
@@ -239,6 +301,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Checkouts/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Checkouts/**";
 				INFOPLIST_FILE = carthage_order_com/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -255,6 +319,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Checkouts/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Checkouts/**";
 				INFOPLIST_FILE = carthage_order_com/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -283,6 +349,7 @@
 				E087112E1D7C59E700CC8F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "OrderManager.h"
+#import <TestBaseCOM/BaseCOM.h>
 
 @implementation OrderManager
 
@@ -17,7 +18,7 @@
 
 -(void)orderList
 {
-    
+    [BaseCOM log:@"order list"];
 }
 
 @end
